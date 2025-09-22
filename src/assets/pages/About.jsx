@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { AboutPage } from "../assets/assets";
+import { AboutPage } from "../assets";
 import { useState } from "react";
 
 const {

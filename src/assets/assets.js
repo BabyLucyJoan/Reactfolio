@@ -6,21 +6,23 @@
 import {
   FaInstagramSquare,
   FaLinkedin,
+  FaTelegram,
   FaFacebookSquare,
   FaHtml5,
-  FaPython,
   FaGitAlt,
   FaGithub,
-  FaJava,
   FaJs,
   FaCss3Alt,
-  FaYoutube,
 } from "react-icons/fa";
-import { BsFiletypeXml } from "react-icons/bs";
-import { TbBrandCpp, TbBrandKotlin } from "react-icons/tb";
-import { RiTailwindCssFill } from "react-icons/ri";
-import { FaSquareXTwitter } from "react-icons/fa6";
+
 import { IoLogoGithub } from "react-icons/io";
+import {
+  SiTiktok,
+  SiReact,
+  SiNodedotjs,
+  SiMongodb,
+  SiPostman,
+} from "react-icons/si";
 
 // Footer Social Icons
 // This array holds the social media icons and links for the footer section.
@@ -28,29 +30,34 @@ import { IoLogoGithub } from "react-icons/io";
 // Example: To change the Twitter icon, replace 'FaSquareXTwitter' with another icon.
 const footerIcons = [
   {
-    name: "x", // Social media name
-    component: FaSquareXTwitter, // Twitter icon from react-icons
-    link: "Your twitter link", // Replace with your actual Twitter URL
+    name: "tiktok",
+    component: SiTiktok,
+    link: "https://www.tiktok.com/@njl_splendour?_t=ZS-8zv7i5MHple&_r=1",
+  },
+  {
+    name: "Telegram", // Social media name
+    component: FaTelegram, // Twitter icon from react-icons
+    link: "https://t.me/techNteach", // Replace with your actual Twitter URL
   },
   {
     name: "linkedIn", // Social media name
     component: FaLinkedin, // LinkedIn icon
-    link: "Your linkedIn link", // Replace with your actual LinkedIn URL
+    link: "https://linkedin.com/in/nwokoye-lucy-5b924128b", // Replace with your actual LinkedIn URL
   },
   {
     name: "facebook",
     component: FaFacebookSquare, // Facebook icon
-    link: "Your facebook link",
+    link: "https://facebook.com/lucy.nwokoye",
   },
   {
     name: "instagram",
     component: FaInstagramSquare, // Instagram icon
-    link: "Your instagram link",
+    link: "https://instagram.com/njl_splendour",
   },
   {
     name: "github",
     component: IoLogoGithub, // GitHub icon
-    link: "Your github link",
+    link: "https://github.com/BabyLucyJoan",
   },
   // You can add more icons or remove existing ones based on your social profiles.
 ];
@@ -58,7 +65,7 @@ const footerIcons = [
 // Header Text and Logo Configuration
 // 'textLogo' is used for displaying the text logo on your portfolio. You can replace it with your name.
 // 'imgLogo' is optional and can be used to show an image logo.
-const textLogo = "John Doe"; // Replace with your name or brand name
+const textLogo = "Lucy Nwokoye"; // Replace with your name or brand name
 const imgLogo = null; // Replace with an image file if you want to use an image logo
 
 // Navigation Menu Items
@@ -69,14 +76,14 @@ const navElements = ["About", "Education", "Skills", "Projects", "Contact"];
 // This object contains all the details for the "About" section of the portfolio.
 // Replace dummy values with your actual information.
 const AboutPage = {
-  authorProfile: "", // Your profile image link
+  authorProfile: "./public/IMG_9214.jpg", // Your profile image link
   authorDescription:
-    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt ad architecto sint quaerat necessitatibus hic voluptas odio ex quidem eaque quo dicta, corrupti, incidunt quis reiciendis aperiam maiores molestias autem?", // Short bio or description about yourself
-  getInTouchUrl: "Your contact url", // URL for your contact or form page
-  authorName: "John Doe", // Replace with your name
-  profileImgTagLine: "Software Engineer @ Google", // Your tagline or job title
-  authorContactMail: "johndoe@gmail.com", // Your email address
-  authorContactNumber: "843-695-0671", // Your contact number (optional)
+    "A Fullstack Web developer with a passion for creating dynamic, user-friendly, and visually appealing web applications. I specialise in building responsive interfaces with React, ensuring seamless performance across all devices.", // Short bio or description about yourself
+  getInTouchUrl: "https://www.tiktok.com/@njl_splendour?_t=ZS-8zv7i5MHple&_r=1", // URL for your contact or form page
+  authorName: "Lucy Nwokoye", // Replace with your name
+  profileImgTagLine: "Software Engineer", // Your tagline or job title
+  authorContactMail: "nwokoyelucy@gmail.com", // Your email address
+  authorContactNumber: "+234-706-756-1427", // Your contact number (optional)
 };
 
 // Education Details
@@ -84,15 +91,31 @@ const AboutPage = {
 // You can add more education objects if necessary.
 const EducationPage = [
   {
-    graduationYear: 2021, // Year of graduation
-    degreeType: "High School", // Type of degree
-    institution: "XYZ College", // Institution name
+    graduationYear: 2024, // Year of graduation
+    degreeType: "Bachelor's degree", // Type of degree
+    fieldOfStudy: "Geography and Environmental Managemment",
+    institution: "University of Port Harcourt", // Institution name
+    institutionUrl: "https://www.uniport.edu.ng", // Institution website link (optional)
+  },
+  {
+    graduationYear: 2022, // Year of graduation
+    // degreeType: "Frontend Web Development", // Degree type
+    institution: "Codecademy", // Institution name
+    fieldOfStudy: "Frontend Web Development",
+    institutionUrl: "https://www.codecademy.com/", // Institution website link (optional)
+  },
+  {
+    graduationYear: 2023, // Year of graduation
+    // degreeType: "Frontend Web Development", // Degree type
+    institution: "Smartech Global", // Institution name
+    fieldOfStudy: "Fullstack Web Development",
     institutionUrl: "", // Institution website link (optional)
   },
   {
-    graduationYear: 2027, // Year of graduation
-    degreeType: "Bachelor's degree", // Degree type
-    institution: "XYZ University", // Institution name
+    graduationYear: 2018, // Year of graduation
+    // degreeType: "Frontend Web Development", // Degree type
+    institution: "Fashion Design Training", // Institution name
+    fieldOfStudy: "Pattern Drafting and ewing",
     institutionUrl: "", // Institution website link (optional)
   },
   // Add more educational qualifications if needed
@@ -102,42 +125,42 @@ const EducationPage = [
 // This array holds the details of certifications you have earned. Replace with your actual certificates.
 // To add more certifications, simply copy and modify the object structure below.
 const CertificatesPage = [
-  {
-    img: "Your certificate image", // Certificate image URL
-    title: "Blue Mountain Certificate", // Certificate title
-    description: "Lorem ipsum...", // Short description of the certification
-    issuedBy: "Blue Mountain", // Issuer (e.g., Coursera, Google, etc.)
-    credentialURL: "", // Optional: URL to verify the certificate (if applicable)
-  },
-  {
-    img: "Your certificate image", // Certificate image URL
-    title: "Blue Mountain Certificate", // Certificate title
-    description: "Lorem ipsum...", // Short description of the certification
-    issuedBy: "Blue Mountain", // Issuer (e.g., Coursera, Google, etc.)
-    credentialURL: "", // Optional: URL to verify the certificate (if applicable)
-  },
-  {
-    img: "Your certificate image", // Certificate image URL
-    title: "Blue Mountain Certificate", // Certificate title
-    description: "Lorem ipsum...", // Short description of the certification
-    issuedBy: "Blue Mountain", // Issuer (e.g., Coursera, Google, etc.)
-    credentialURL: "", // Optional: URL to verify the certificate (if applicable)
-  },
-  {
-    img: "Your certificate image", // Certificate image URL
-    title: "Blue Mountain Certificate", // Certificate title
-    description: "Lorem ipsum...", // Short description of the certification
-    issuedBy: "Blue Mountain", // Issuer (e.g., Coursera, Google, etc.)
-    credentialURL: "", // Optional: URL to verify the certificate (if applicable)
-  },
-  {
-    img: "Your certificate image", // Certificate image URL
-    title: "Blue Mountain Certificate", // Certificate title
-    description: "Lorem ipsum...", // Short description of the certification
-    issuedBy: "Blue Mountain", // Issuer (e.g., Coursera, Google, etc.)
-    credentialURL: "", // Optional: URL to verify the certificate (if applicable)
-  },
-  // Add more certificates following the structure above
+  // {
+  //   img: "Your certificate image", // Certificate image URL
+  //   title: "Blue Mountain Certificate", // Certificate title
+  //   description: "Lorem ipsum...", // Short description of the certification
+  //   issuedBy: "Blue Mountain", // Issuer (e.g., Coursera, Google, etc.)
+  //   credentialURL: "", // Optional: URL to verify the certificate (if applicable)
+  // },
+  // {
+  //   img: "Your certificate image", // Certificate image URL
+  //   title: "Blue Mountain Certificate", // Certificate title
+  //   description: "Lorem ipsum...", // Short description of the certification
+  //   issuedBy: "Blue Mountain", // Issuer (e.g., Coursera, Google, etc.)
+  //   credentialURL: "", // Optional: URL to verify the certificate (if applicable)
+  // },
+  // {
+  //   img: "Your certificate image", // Certificate image URL
+  //   title: "Blue Mountain Certificate", // Certificate title
+  //   description: "Lorem ipsum...", // Short description of the certification
+  //   issuedBy: "Blue Mountain", // Issuer (e.g., Coursera, Google, etc.)
+  //   credentialURL: "", // Optional: URL to verify the certificate (if applicable)
+  // },
+  // {
+  //   img: "Your certificate image", // Certificate image URL
+  //   title: "Blue Mountain Certificate", // Certificate title
+  //   description: "Lorem ipsum...", // Short description of the certification
+  //   issuedBy: "Blue Mountain", // Issuer (e.g., Coursera, Google, etc.)
+  //   credentialURL: "", // Optional: URL to verify the certificate (if applicable)
+  // },
+  // {
+  //   img: "Your certificate image", // Certificate image URL
+  //   title: "Blue Mountain Certificate", // Certificate title
+  //   description: "Lorem ipsum...", // Short description of the certification
+  //   issuedBy: "Blue Mountain", // Issuer (e.g., Coursera, Google, etc.)
+  //   credentialURL: "", // Optional: URL to verify the certificate (if applicable)
+  // },
+  // // Add more certificates following the structure above
 ];
 
 // Skills Section Icons
@@ -147,16 +170,13 @@ const CertificatesPage = [
 const skillsPage = [
   FaGitAlt,
   FaGithub,
-  TbBrandCpp,
-  FaJava,
   FaJs,
-  TbBrandKotlin,
-  FaPython,
   FaHtml5,
-  BsFiletypeXml,
   FaCss3Alt,
-  RiTailwindCssFill,
-  FaYoutube,
+  SiReact,
+  SiNodedotjs,
+  SiMongodb,
+  SiPostman,
 ];
 
 // Projects Section
@@ -164,19 +184,39 @@ const skillsPage = [
 // You can add or remove projects as needed.
 const projectsPage = [
   {
-    projectName: "Git clone", // Project name
-    projectDescription: "lorem ipsum...", // Project description
-    projectURL: "", // Optional: Project demo link (if hosted)
+    projectName: "Tech And Teach Community", // Project name
+    projectDescription:
+      "A vibrant Tech community of over a thousand people from across Africa. It is a space where learners, enthusiasts, and professionals come together to explore technology, share knowledge, and grow through interactive tutorials, challenges, and discussions.", // Project description
+    projectURL: "https://t.me/techNteach", // Optional: Project demo link (if hosted)
     githubRepositoryURL: "", // Optional: GitHub repository link
-    tags: "Flask, React.js, MongoDB, Rest API", // Tech stack used in the project
-    date: "Sep 2022 - May 2023", // Project duration
+    tags: "", // Tech stack used in the project
+    // date: "Sep 2022 - May 2023", // Project duration
   },
   {
-    projectName: "Git clone", // Project name
-    projectDescription: "lorem ipsum...", // Project description
-    projectURL: "", // Optional: Project demo link (if hosted)
+    projectName: "NJL Splendour E-commerce", // Project name
+    projectDescription:
+      "Luxury fashion storefront showcasing modern UI and responsive design.", // Project description
+    projectURL: "https://njlsplendourecommerce.vercel.app/", // Optional: Project demo link (if hosted)
     githubRepositoryURL: "", // Optional: GitHub repository link
-    tags: "Flask, React.js, MongoDB, Rest API", // Tech stack used in the project
+    tags: "React.js, Next.js, Tailwind CSS, React Icons, Git, GitHub, Vercel", // Tech stack used in the project
+    // date: "Sep 2022 - May 2023", // Project duration
+  },
+  {
+    projectName: "NoteAngel", // Project name
+    projectDescription:
+      "A clean and minimal note-taking app that lets users create and organize notes with ease.", // Project description
+    projectURL: "https://noteangel.vercel.app/", // Optional: Project demo link (if hosted)
+    githubRepositoryURL: "", // Optional: GitHub repository link
+    tags: "React.js, JavaScript (ES6+), CSS/Tailwind CSS, React Icons, Git, GitHub, Vercel", // Tech stack used in the project
+    // date: "Sep 2022 - May 2023", // Project duration
+  },
+  {
+    projectName: "AtmosphereNow", // Project name
+    projectDescription:
+      "A real-time weather app that provides instant updates on current conditions with a clean and responsive interface.", // Project description
+    projectURL: "https://atmosphere-now.vercel.app", // Optional: Project demo link (if hosted)
+    githubRepositoryURL: "", // Optional: GitHub repository link
+    tags: "React.js, JavaScript (ES6+), CSS, Weather API (e.g., OpenWeatherMap), Git, GitHub, Vercel", // Tech stack used in the project
     date: "Sep 2022 - May 2023", // Project duration
   },
   // Add more projects or remove the ones you don't need

@@ -1,6 +1,6 @@
 import { containerStyle } from "./styles.js";
-import { PageTitle } from "../components/components.js";
-import { AboutPage, footerIcons } from "../assets/assets.js";
+import { PageTitle } from "../../components/components.js";
+import { AboutPage, footerIcons } from "../assets.js";
 import { MdEmail } from "react-icons/md";
 import { Link } from "react-router-dom";
 import { FaPhoneAlt } from "react-icons/fa";
