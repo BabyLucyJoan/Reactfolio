@@ -76,7 +76,7 @@ const navElements = ["About", "Education", "Skills", "Projects", "Contact"];
 // This object contains all the details for the "About" section of the portfolio.
 // Replace dummy values with your actual information.
 const AboutPage = {
-  authorProfile: "./public/IMG_9214.jpg", // Your profile image link
+  authorProfile: "/IMG_9214.jpg", // Your profile image link
   authorDescription:
     "A Fullstack Web developer with a passion for creating dynamic, user-friendly, and visually appealing web applications. I specialise in building responsive interfaces with React, ensuring seamless performance across all devices.", // Short bio or description about yourself
   getInTouchUrl: "https://www.tiktok.com/@njl_splendour?_t=ZS-8zv7i5MHple&_r=1", // URL for your contact or form page
